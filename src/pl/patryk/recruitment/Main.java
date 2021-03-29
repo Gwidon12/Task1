@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter integer or press s to finish");
-        while (!sc.hasNext("s") && sc.hasNextInt()) {
+        System.out.println("Enter integer to continue or enter any non-integer value to finish");
+        while (sc.hasNextInt()) {
             System.out.println("Enter next integer: ");
             int a = sc.nextInt();
             integerList.add(a);
